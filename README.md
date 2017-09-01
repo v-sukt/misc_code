@@ -1,5 +1,5 @@
 # misc_code
-small scripts from here and there
+small scripts of misc use
 * chessboard.sh 
   * chess board visual on CLI(not the game). Using the characters or \e exscape sequence for black and white background
 
