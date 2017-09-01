@@ -8,3 +8,11 @@ small scripts from here and there
 
 * create_user.sh
   * create the new user and configure ssh-key based authentication. Requires current access 
+
+* airflow-useradd.sh
+  * add new user for web UI password, 
+  ```[webserver]
+  authenticate = True
+  auth_backend = airflow.contrib.auth.backends.password_auth```
+  automates the commands for adding new user for Airflow WebUI
+  
