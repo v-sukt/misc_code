@@ -1,2 +1,2 @@
 # misc_code
-small scripts of various purposes
+small scripts from here and there
