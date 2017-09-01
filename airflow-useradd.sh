@@ -1,5 +1,5 @@
 #!/bin/bash
-# Applicable for - webserver user login 
+# airflow-useradd.sh : add user to airflow webserver login 
 # For simple password authentication - auth_backend = airflow.contrib.auth.backends.password_auth
 # A small script to add the user via CLI. This adds new users DB
 
