@@ -9,7 +9,7 @@
 ssh ubuntu@${2} ls>/dev/null; [ $? -ne 0 ] && echo "no acess to server : ${2} with user `whoami`" && exit 2
 #if result is not failure proceed
 
-#check if user exists
+#check if user exists - assuming the login is currently allowed for ubuntu@server
 ssh ubuntu@${2} id -u ${1}>/dev/null; [ $? -eq 0 ] && echo "the user ${1} already exists on ${2}" && exit 3
 
 #copy the key-name.pub file to /tmp folder on server
