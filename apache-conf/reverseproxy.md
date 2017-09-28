@@ -2,7 +2,8 @@
 
 For apache proxy, to direct the requests to internal service  
 
-```<VirtualHost *:443>
+```
+<VirtualHost *:443>
 	#ServerAdmin <webmaster@localhost>
 	ServerName server1.example.com
 	DocumentRoot "/var/www/html"
