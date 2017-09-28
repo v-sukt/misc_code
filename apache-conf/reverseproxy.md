@@ -1,4 +1,4 @@
-##reverseproxy snippet
+## Reverseproxy snippet
 
 For apache proxy, to direct the requests to internal service  
 
