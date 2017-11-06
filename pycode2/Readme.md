@@ -1,1 +1,2 @@
-trying python2.7 first then will switch to python3
+#### Purpose
+Trying python2.7 before switch to python3
