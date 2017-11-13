@@ -2,10 +2,10 @@
 Usage:
      ex16.py <filename>
 important methods to remember:
-close - close the file saving the content
-read - red entire file, assign the content to variable
-readline - read one line from the file
-truncate - remove the contents of file - be careful with this
+close() - close the file saving the content
+read() - red entire file, assign the content to variable
+readline() - read one line from the file
+truncate() - remove the contents of file - be careful with this
 write(stuff) - write stuff in the file
 """
 from sys import argv
