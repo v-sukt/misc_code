@@ -1,5 +1,6 @@
 # Reading files
 """
+Open and display the content of file
 Usage:
      ex15.py <filename>
 """
