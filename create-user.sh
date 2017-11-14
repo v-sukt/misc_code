@@ -1,6 +1,6 @@
 #!/bin/bash
 #the script adds the specified ssh user in the specified arg-1 with the server name/ip provided as arg2
-#arg2 server name(as refence in /etc/hosts)/ip
+#arg2 server name(as reference in /etc/hosts)/ip
 #arg3 is the key-name  where key.name is private key and key-name.pub is publik ey
 
 [ $# -lt 3 ] && echo -e "Usage:\t $0 {username} {target-server} {public-key-path}" && exit 1
