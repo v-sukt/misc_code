@@ -1,4 +1,5 @@
 """Accessing the elements of list"""
+
 animals = ['bear', 'python', 'peacock', 'kangaroo', 'whale', 'platypus']
 
 # first, second - ordinal- ordered || at 1, 4 - cordinal - cards
