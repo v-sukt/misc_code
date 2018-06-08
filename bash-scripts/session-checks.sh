@@ -84,7 +84,7 @@ function check-active-sessions(){
         comm=$(cat -A /proc/${col2}/cmdline)
         srv=$(echo ${col9}|cut -f2 -d ">")
 
-        if ${ dur:=$( check-duration ${col2} 86400) }; then
+        if ! ${dur:=$( check-duration ${col2} 86400) }; then
             
             # check if the PID for long duration is exempted form check
             if $( grep -qw ${col2} ${e_file} ); then
@@ -94,14 +94,16 @@ function check-active-sessions(){
             fi
 
         fi
-            
+        
+        unset dur
+
     done<${tmpfile}
     
     rm -f ${tmpfile}
 
     # check for violation-file and trigger alerts
     if [ -s ${v_file} ]; then
-        for user in $(cat ${v_file}|cur -f1 -d " "|sort|uniq); do 
+        for user in $(cat ${v_file}|cut -f1|sort|uniq); do 
             alert ${user} && echo -e "Alert triggered for {user}" \
             || echo -e "Triggering alert failed for {user}" 
         done
