@@ -10,13 +10,13 @@
 
 * duration.sh : the duration conversion from the no. of seconds
   - useful to get
-    - [] difference between two files creation :
+    - [ ] difference between two files creation :
            ```
             file1_date=$(stat --format +%Z file1)    # This generated the last modified time since epoch
             file2_date=$(stat --format +%Z file2)    # generates as the number of seconds
             echo $(duration $(expr $(file1_date) - $(file2_date)))
            ```
-    - [] Time since the epoch :
+    - [ ] Time since the epoch :
            ```
              echo -e "Since epoch\t: $(duration $(date +%s))"
            ```

@@ -7,5 +7,5 @@ small scripts of misc use
 
 * apache-conf : sample apache configurations
 
-* bash-scripts : the bash scripts 
+* bash-scripts : the interesting bash scripts 
 
