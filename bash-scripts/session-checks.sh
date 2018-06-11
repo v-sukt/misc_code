@@ -83,8 +83,9 @@ function check-active-sessions(){
         # extract required variables
         comm=$(cat -A /proc/${col2}/cmdline)
         srv=$(echo ${col9}|cut -f2 -d ">")
-
-        if ! ${dur:=$( check-duration ${col2} 86400) }; then
+        
+        dur=$(check-duration ${col2} 86400)
+        if [ ! ${dur} -eq 0 ]; then
             
             # check if the PID for long duration is exempted form check
             if $( grep -qw ${col2} ${e_file} ); then
@@ -129,9 +130,11 @@ function check-duration() {
     duration=$(expr $(date +%s) - $(stat -c%X /proc/${1}) )
     
     if [ ${duration} -le $2 ]; then
+        echo -n 0
         return 0
     else
-        return ${duration}
+        echo -n ${duration} # this was later added as the bash variable expansion didn't properly assign the variable value when returned
+        return 1
     fi
 }
 
