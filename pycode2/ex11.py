@@ -1,4 +1,4 @@
-# asking questions - here we'll take teh user input
+# asking questions - here we'll take the user input
 # Note : The ',' at end of each line will stop new line after prompt
 print "How old are you?",
 age = raw_input()

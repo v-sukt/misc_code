@@ -1,5 +1,5 @@
 #Set the common formatter for the section below
-formatter = "%r %r %r %r" # try later with * 4
+formatter = "%r %r %r %r"  # try later with * 4
 
 print formatter % (1, 2, 3, 4) # the formatter can print the numbers
 print formatter % ("one", "two", "three", "four") # can even print single word strings

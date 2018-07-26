@@ -10,10 +10,10 @@ prompt = '$> '
 
 print "Hi %s, I'm in the %s script" % (user, script)
 print "I'd like to ask you a few questions."
-print "Do you like me %s?" % user
+print "Do you like me %s ?" % user
 likes = raw_input(prompt)
 
-print"Where do you live %s?"
+print "Where do you live %s?" % user
 lives = raw_input(prompt)
 
 print "What kind of computer do you have?"
