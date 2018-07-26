@@ -15,9 +15,9 @@ print "1 != 0 and 2 == 1 :", 1 != 0 and 2 == 1
 print '"test" != "testing" :' "test" != "testing"
 print '"test" == 1 :', "test" == 1
 print "not (True and False) :", not (True and False)
-print not(1 == 1 and 0 != 1)
-print not(10 == 1 or 1000 == 1000)
-print not(1 != 10 or 3 == 4)
+print "not(1 == 1 and 0 != 1)", not(1 == 1 and 0 != 1)
+print "not(10 == 1 or 1000 == 1000)", not(10 == 1 or 1000 == 1000)
+print "not(1 != 10 or 3 == 4)", not(1 != 10 or 3 == 4)
 print not("testing" == "testing" and "Zed" == "Cool Guy")
 print 1 == 1 and not("testing" == 1 or 1 == 0)
 print "chunky" == "beacon" and not (3 == 4 or 4 == 3)
