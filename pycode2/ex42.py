@@ -40,7 +40,8 @@ class Person(object):
 
 # Employee is a Person
 class Employee(Person):
-    """ Inherits the Person class, there can be muiltiple inheritance - but it has some issues with multiple __init__() methods being called from child of these classes """
+    """ Inherits the Person class, there can be muiltiple inheritance - but it has some issues with 
+    multiple __init__() methods being called from child of these classes """
     
     def __init__(self, name, salary):
         # Set the name Employee who is-a Person (so inherits the name attribute)
