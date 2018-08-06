@@ -1,4 +1,8 @@
 """ There are following modules defined here:
-- scenes
-- mapengine
+Provides the code packages separate from the executer
+-----------------------------------------------------
+Has following modules:
+  - scenes
+  - mapengine
+
 """
