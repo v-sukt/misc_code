@@ -7,16 +7,16 @@ except:
 
 
 config = {
-    'description': 'My Project',
-    'author': 'My Name',
+    'description': 'Example 47 project',
+    'author': 'v-sukt',
     'url': 'URL to get it at',
     'download_url': 'Where to Download it.',
-    'author_mail': 'My_email@mail.ext',
+    'author_mail': 'v-sukt@users.noreply.github.com',
     'version': '0.1',
     'install_requires': ['nose>=0'], # the Packages required by this package
-    'packages': ['NAME'], # The packages from . or $PWD to be installed
+    'packages': ['ex47_project'], # The packages from . or $PWD to be installed
     'scripts': ['bin/dummy'],   #the scripts that need to be installed
-    'name': 'projectname'
+    'name': 'ex47_project_pkg'
 }
 
 setup(**config)
