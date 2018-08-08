@@ -36,13 +36,35 @@ def test_errors():
     result = lexicon.scan('bear IAS princess')
     assert_equal(result, [('noun','bear'),('error','IAS'),('noun','princess')])
 
-def test_parser():
+def test_parser_verb():
     """test the parser for verb, object, subject then for sentence with subject start and verb start"""
     # single word sentence
     assert_equal( parser.parse_verb( lexicon.scan('go') ), ('verb', 'go')) # verb test
+
+def test_parser_object():
     assert_equal( parser.parse_object( lexicon.scan('south')), ('direction', 'south') ) # direction check
     assert_equal( parser.parse_object( lexicon.scan('princess')), ('noun','princess')) # noun check
+
+def test_parser_subject():
     result = parser.parse_subject( lexicon.scan('go south'), ('noun', 'player'))
     assert_equal( result, parser.Sentence(('noun', 'player'), 
                                     ('verb','go'), 
                                     ('direction','south')))
+
+def test_parser_sentence():
+    result = parser.parse_sentence( lexicon.scan("the princess go south") )
+    expected = parser.Sentence(('noun','princess'),('verb','go'),('direction','south'))
+    assert_equal(result, expected)
+
+def test_parser_errors():
+    assert_raises(parser.ParserError,parser.parse_verb, lexicon.scan("something go"))
+    assert_raises(parser.ParserError,parser.parse_object, lexicon.scan("something princess"))
+    assert_raises(parser.ParserError,parser.parse_subject, lexicon.scan("something south"), ('noun','princess'))
+    #try:
+    #    result = parser.parse_sentence( lexicon.scan("new princess go south") )
+    #except parser.ParserError:
+    #    return True
+    # Use assert_raises for excception catching and comparison but takes Exception type, the callable 
+    # arguments
+    assert_raises(parser.ParserError,parser.parse_sentence,lexicon.scan("new princess go south"))
+

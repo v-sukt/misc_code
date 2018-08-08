@@ -15,6 +15,12 @@ class Sentence(object):
         self.verb = verb[1]
         self.object = object[1]
 
+    def __eq__(self, oneline):
+        if self.subject == oneline.subject and self.verb == oneline.verb and self.object == oneline.object:
+            return True
+        else:
+            return False
+
 
 def peek(word_list):
     """Returns the first object of first tuple send from the tuple list received"""
@@ -89,5 +95,3 @@ def parse_sentence(word_list):
         return parse_subject(word_list, subj)
     else:
         raise ParserError("Must start with subject, object or noun")
-
-

@@ -6,4 +6,3 @@
 ('direction', 'south')
 >>> parser.parse_object([('noun', 'princess')])
 ('noun', 'princess')
-
