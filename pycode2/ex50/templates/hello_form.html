@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Sample web form</title>
+    <head>
+    <body>
+        <h1>Fill Out this Form</h1>
+        
+        <!-- More details in Form tag for html 
+        1. Collect data from the user using the form fields inside the form.
+        2. Send them to the server using a POST type of request, which is just 
+            another browser request that “hides” the form fields.
+        3. Send that to the /hello URL (as shown in the action="/hello" part). -->
+
+        <form action="/hello" method="POST"> 
+            <!--This renders the textbox that is taken and sent as greet -->
+            A Greeting: <input type="text" name="greet"> 
+            <br/>
+            <!--This renders the textbox that is taken and sent as name -->
+            Your Name: <input type="text" name="name">
+            <br/>
+            <input type="submit">
+        </form>
+
+    </body>
+</html>
