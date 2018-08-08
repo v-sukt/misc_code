@@ -41,10 +41,14 @@ render = web.template.render('templates/')
 class Index(object):
     def GET(self):
         # Adding the web.input object will get the input from the browser
-        form = web.input(name="NoBody")
-        # The form.name is received from the invocation http://localhost:8080/hello?name=v-sukt
-        greeting = "Hello %s!!" % (form.name)
-        return render.index(greeting = greeting)
+        form = web.input(name="NoBody", greet=None)
+
+        # The form.name is received from the invocation http://localhost:8080/hello?name=v-sukt&greet=Voila!
+        if form.greet:
+            greeting = "%s, %s" % (form.greet, form.name)
+            return render.index(greeting = greeting)
+        else:
+            return "ERROR: greet is required"
 
 if __name__ == '__main__':
     app.run()
