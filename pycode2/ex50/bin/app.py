@@ -31,7 +31,7 @@ How a template works:
 """
 import web
 
-urls = ('/', 'Index')
+urls = ('/hello', 'Index')
 
 app = web.application(urls, globals())
 
@@ -40,7 +40,10 @@ render = web.template.render('templates/')
 
 class Index(object):
     def GET(self):
-        greeting = "Hello World!!"
+        # Adding the web.input object will get the input from the browser
+        form = web.input(name="NoBody")
+        # The form.name is received from the invocation http://localhost:8080/hello?name=v-sukt
+        greeting = "Hello %s!!" % (form.name)
         return render.index(greeting = greeting)
 
 if __name__ == '__main__':
