@@ -50,12 +50,9 @@ class GameEngine(object):
         else:
             form.action = "*"
 
-        if session.room == map.the_end_winner: 
+        if session.room.name == "The End": 
             print "reached the end room"
             raise web.seeother("/end")
-        elif session.room == map.the_end_looser:
-            print "reached the last looser room"
-            return render.you_died()
         elif session.room and form.action:
             # to debug - only on submit you can see the page you are leaving
             print "In the %r room" % session.room.name 
@@ -66,9 +63,15 @@ class GameEngine(object):
 class Bye(object):
 
     def GET(self):
-        print "reached in bye"
-        return render.you_won()
-        session.kill()
+        print "reached in Bye"
+        
+        if session.room == map.the_end_winner:
+            session.kill()
+            return render.you_won()
+        elif session.room == map.the_end_looser:
+            print "reached the last looser room"
+            session.kill()
+            return render.you_died()
 
 if __name__ == "__main__":
     app.run()
