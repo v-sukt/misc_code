@@ -1,0 +1,16 @@
+For linux, it's pretty simple:
+* For debian like:
+   install meta-package 'build-essential'
+* For RedHat like:
+   install 'Development Tools' package group 
+On Mac Get XCode from Apple DVD or Store
+
+For windows install cygwin/MinGW environment
+------------------------
+Check if the cmopiler is working with 
+$ cc --version
+
+Now get ready with your favourite editor
+
+Just DON'T USE IDE!!
+

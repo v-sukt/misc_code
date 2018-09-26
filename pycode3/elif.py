@@ -1,7 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 day="Tuesday"
 if day=="Monday":
-     print("Sunny")
+    print("Sunny")
 elif day=="Tuesday":
-     print("Cloudy")
+    print("Cloudy")
 else:
-     print("Rainy!")
+    print("Rainy!")

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 print("I will now count my chickens:")
 
 print("Hens", 25 + 30 / 6)  #this sums the values first does division

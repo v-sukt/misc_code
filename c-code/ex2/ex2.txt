@@ -1,0 +1,32 @@
+What we did in ex1 to create the executable was to call make to do the things for us.
+This is how it worked:
+make ex1
+- The command sayd make file named ex1
+- Does the ex1 exist already?
+- no, is there another file that starts with ex1
+- Yes, there's ex1.c. Do I know how to build .c files?
+- Yes, now execute cc ex1.c -o ex1 to build it
+
+But if we want to change its behaviours we cando do it using the makefile or passing it modifiers as envieonment variables.
+    The CFLAGS gives the flags that will be used for building the project
+
+When executing make command without any argumnts it will execute the first block and its command. 
+    here we are using 
+        all:ex1 
+    and providing the commands to be executed, as 
+        make ex1.c  
+Note: If we keep clean above the all it creates the file then removes it, and clean section becomes the default section for make without arguments
+
+```
+all: ex1
+    make ex1.c
+
+clean:
+    rm -f ex1```
+
+The method of specifying the dependencies is 
+    task: dependencies 
+so hello.c input.c work.c likewise
+
+    all:
+        g++ main.cpp hello.cpp factorial.cpp -o hello

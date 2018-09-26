@@ -1,4 +1,5 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 my_name = 'v-sukt'
 my_age = 45 # :)

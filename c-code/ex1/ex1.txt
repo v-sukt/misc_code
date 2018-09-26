@@ -1,0 +1,11 @@
+Write the code in ex1.c, then compile and link it with make
+
+$ make ex1
+
+Now the executable is created ex1
+
+$ file ex1.c                                   
+ex1.c: C source, ASCII text
+
+$ file ex1
+ex1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, BuildID[sha1]=58..., not stripped

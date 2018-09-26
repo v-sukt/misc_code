@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 cars = 100
 space_in_a_car = 4.0
 drivers = 30

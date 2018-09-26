@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Here's some new strange stuff, remember to type it exactly.
 days = "Mon Tue Wed Thu Fri Sat Sun"
 # String with new-line character - '\n'
