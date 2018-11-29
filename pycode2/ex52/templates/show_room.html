@@ -1,0 +1,19 @@
+$def with (room)
+
+<h1>$room.name</h1>
+&#9776;&#9776;&#9776;&#9776;
+<pre>
+    $room.description
+</pre>
+&#9776;&#9776;&#9776;&#9776;
+$if room.name == "Death":
+    <p><a href="/">Play Again?</a></p>
+$else:
+    <p> 
+        <form action="/game" method="POST" align = "right">
+            &#9760 <br>
+            &#9755 Your Action :- &emsp;&emsp;
+            <input type="text" name="action"> <input type="SUBMIT" autofocus="true">
+            
+        </form>
+    </p>

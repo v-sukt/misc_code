@@ -1,0 +1,31 @@
+Some windows command that can be used in powershell
+
+pwd   print working directory
+hostname   my computer’s network name
+mkdir   make directory
+cd   change directory
+ls   list directory
+rmdir   remove directory
+pushd   push directory
+popd   pop directory
+cp   copy a file or directory
+robocopy   robust copy
+mv   move a file or directory
+more   page through a file
+type   print the whole file
+forfiles   run a command on lots of files
+dir -r   find files
+select-string   find things inside files
+help   read a manual page
+helpctr   find what man page is appropriate
+echo   print some arguments
+set   export/set a new environment variable
+exit   exit the shell
+runas   DANGER! become super user root DANGER!
+
+
+PowerShell References
+* On Windows, there’s really only PowerShell. Here’s a list of useful links for you related to PowerShell:
+* Owner’s Manual   http://technet.microsoft.com/en-us/library/ee221100.aspx
+* Cheat Sheet   http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=7097
+* Master PowerShell   http://powershell.com/cs/blogs/ebook/default.aspx
