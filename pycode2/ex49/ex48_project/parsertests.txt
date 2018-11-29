@@ -1,8 +1,0 @@
->>> import parser
->>> import lexicon
->>> parser.parse_verb([('verb', 'go')])
-('verb', 'go')
->>> parser.parse_object([('direction', 'south')])
-('direction', 'south')
->>> parser.parse_object([('noun', 'princess')])
-('noun', 'princess')

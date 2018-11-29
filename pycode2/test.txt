@@ -1,3 +1,0 @@
-This is first sample line \n\n with two new lines
-This is second line with few \t\t tabs
-This is the final line with form feed \f
