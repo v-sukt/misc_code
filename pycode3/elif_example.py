@@ -1,7 +1,7 @@
-day="Tuesday"
-if day=="Monday":
+day = "Tuesday"
+if day == "Monday":
      print("Sunny")
-elif day=="Tuesday":
+elif day == "Tuesday":
      print("Cloudy")
 else:
      print("Rainy!")

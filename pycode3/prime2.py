@@ -1,5 +1,5 @@
 primeNo=[1]
-for i in range(2,100000000000000):
+for i in range(2,100000):
 	j=2	
 	counter=0
 	while j<i:
@@ -12,5 +12,9 @@ for i in range(2,100000000000000):
 		primeNo.append(i)
 	else:
 		counter=0
-for i in primeNo:
-	print(i)
+print(f"prime nos: {primeNo}")
+"""
+real    13m52.659s
+user    13m50.296s
+sys     0m0.988s
+"""
