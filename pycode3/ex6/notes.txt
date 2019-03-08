@@ -1,0 +1,49 @@
+The strings in python are something that is between " or '.
+To insert variables in the print statement 've following ways
+    - use f-strings
+    - use .format function
+
+First way:
+    They look like following -
+        f"some stuff here {avariable}"
+        f"some other stuff {anothervar}"
+    they are essentially the strings with 'f' prefixed to it. On evaluation print()
+    substitutes the values of variables at the locations.
+    e.g.
+        dialogue = "Hum to hum hai.. Baki pani kum hai"
+        print(f"The dialogue: {dialogue}")
+        print(f'{dialogue}')
+
+Second method:
+    You can see this used more often, here the values are inserted at {} in the string
+    in the sequence they are specified in format() arguments. e.g. -
+        dialogue = "Sirf It's Coool.. bolne se tum cool nai ban jate"
+        print("The dialogue: {}".format(dialogue))
+        print('The dialogue : \'{}\'\nhas length of {}'.format(dialogue, len(dialogue)))
+    - The sequence matters, the values are directly printed in the sequence of {}.
+    - for extra/less arguments we get 'IndexError: tuple index out of range'
+
+To divide the long line of code
+    - for case of arguments of function it can be moved to next line without any issue
+    - for case of string just end the string and start new string on the new line - they are concatenated
+        by python
+    e.g. -
+        print("This is was my attempt {} \nthen it was attempt {} and\nthen it was attempt {}".format(1,
+                                                                                                      2,
+                                                                                                      3)
+              )
+       OR
+        print("This is was my attempt {} \n"
+              "then it was attempt {} and\n"
+              "then it was attempt {}".format(1,
+                                              2,
+                                              3)
+              )
+    - for case of an expression use escape character followed by new line:
+        attempts = 1 \
+                   + 1 \
+                   + 1
+        print("So in total I made", 1+
+              1+1, "attempts")
+        As you can see the expression within the brackets don't need the escape character.
+        But without brackets we do need the same.
