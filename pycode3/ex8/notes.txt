@@ -1,0 +1,13 @@
+We can use same formatter to get similar pattern of logs
+Sample apache log - 80.227.101.2 - - [03/Mar/2019:06:35:33 +0000] "POST / HTTP/1.1" 200 4711 "-" "-"
+
+formatter = "[{host} {identity} {user} {time} {request} {status} {byte} {extra}]"
+print(formatter.format(host="127.0.0.1",
+                       identity="-",
+                       user="-",
+                       time="05/Feb/2012:17:11:55 +0000",
+                       request="GET / HTTP/1.1",
+                       status="200",
+                       byte="140",
+                       extra="- Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 "
+                       "(KHTML, like Gecko) Chrome/18.0.1025.5 Safari/535.19"))

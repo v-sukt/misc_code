@@ -1,0 +1,3 @@
+To get keyboard input we can use raw_input() and input() in python2.x
+In python3.x this is changed to input() and eval(input()) respectively.
+

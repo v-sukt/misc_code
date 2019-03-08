@@ -1,0 +1,7 @@
+There can be multi-line strings, these are quoted within 3 single(') or 3 double quotes(").
+so things between """ and """ is multi-line string
+    """This
+    is
+    a
+    multi-line
+    string"""

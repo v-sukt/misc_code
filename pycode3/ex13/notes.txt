@@ -1,0 +1,41 @@
+Parameters to the script
+------------------------
+    We can get commandline arguments in python3. Parsing the arguments is implemented in sys module.
+    So for using this we import list argv from sys module.
+
+    In the example we are taking and assigning exactly 3 arguments, so if the no. of arguments is less
+    we'll get an error like -
+        'ValueError: not enough values to unpack'
+    Whereas when the number of arguments is more, we'll get something like-
+        'ValueError: too many values to unpack '
+
+    So we can opt for another way of handling the issue:
+        for index in range(len(argv)):
+            print("arg at location {} is {}".format(index, argv[index]))
+
+    Though this is preliminary level or we can use old bash method with while loop
+        index = 1
+        extra_arg = []
+        try:
+            while argv[index]:
+                if argv[index] == "--first":
+                    index += 1
+                    first_arg = argv[index]
+                elif argv[index] == "--second":
+                    index += 1
+                    second_arg = argv[index]
+                else:
+                    extra_arg.append(argv[index])
+                index += 1
+        except Exception as e:
+            pass
+        if first_arg:
+            print("first", first_arg)
+        if second_arg:
+            print("second",second_arg)
+        if extra_arg:
+            print("extra : ", extra_arg)
+
+    To see something that't true generic check
+        import argparse
+    help.

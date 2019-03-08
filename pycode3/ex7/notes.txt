@@ -1,0 +1,15 @@
+Some operations that cna be done on strings :
+
+addition (in terms of string it's concatenation):
+    str1 = "This"
+    str2 = "is"
+    str3 = "soooo"
+    str4 = "good"
+    combined = str1 + str2 + str3 + str4  # results in 'Thisissoooogood'
+    combined_ = str1 + " " + str2 + " " + str3 + " " + str4  # results in 'This is soooo good'
+
+multiplication (in terms of string it repetition )
+    def pretty_title(title, sep):
+        formatted_title = sep * len(title) + "\n" + title + "\n" + sep * len(title)
+        print(formatted_title)
+    pretty_title("My text title", "*")
