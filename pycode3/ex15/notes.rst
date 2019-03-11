@@ -10,6 +10,10 @@ Opening File
 
     While opening file that is too large, it'll load everything in memory. So better provide the size argument to
     open() and process on the section loaded, then we can load rest of the section :
-        with open("log.txt") as infile:
-            for line in infile:
-                do_something_with(line)
+
+    .. code-block:: python
+
+            with open("log.txt") as infile:
+                for line in infile:
+                    do_something_with(line)
+
