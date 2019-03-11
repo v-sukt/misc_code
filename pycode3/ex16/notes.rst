@@ -43,3 +43,32 @@ With reformatting :
     lines.append(input("line 3:") + "\n")
     target.writelines(lines)
 
+File open modes
+===============
+There are following modes available
+
++-------------+-----------------------------------------------------------------+
+| Character   | Meaning                                                         |
++=============+=================================================================+
+| 'r'         | open for reading (default)                                      |
++-------------+-----------------------------------------------------------------+
+| 'w'         | open for writing, truncating the file first                     |
++-------------+-----------------------------------------------------------------+
+| 'x'         | open for exclusive creation, failing if the file already exists |
++-------------+-----------------------------------------------------------------+
+| 'a'         | open for writing, appending to the end of the file if it exists |
++-------------+-----------------------------------------------------------------+
+| 'b'         | binary mode                                                     |
++-------------+-----------------------------------------------------------------+
+| 't'         | text mode (default)                                             |
++-------------+-----------------------------------------------------------------+
+| '+'         | open a disk file for updating (reading and writing)             |
++-------------+-----------------------------------------------------------------+
+
+- Default mode is ``rt``
+- ``w+b`` opens and truncates the file to 0 bytes
+- ``r+b`` opens the file without truncation
+- ``w+``, ``r+``, and ``a+`` opens file in read and write mode
+
+    The position in file will be different depending on the character used
+
