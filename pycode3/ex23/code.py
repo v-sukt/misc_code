@@ -6,6 +6,7 @@ def main(language_file, encoding, errors):
     line = language_file.readline()
     if line:
         print_line(line, encoding, errors)
+        # recursive call - so no need of for line in language_file.readlines()
         return main(language_file, encoding, errors)
     else:
         pass
