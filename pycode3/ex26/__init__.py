@@ -1,2 +1,2 @@
 """Correcting the code"""
-from .code import *
+from .mycode import *

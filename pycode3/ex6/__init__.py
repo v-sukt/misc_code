@@ -1,2 +1,2 @@
-from .code import *
+from .mycode import *
 

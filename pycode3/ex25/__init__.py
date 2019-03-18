@@ -1,4 +1,4 @@
-from .code import *
+from .mycode import *
 
 sentence = "All good things come to those who wait."
 

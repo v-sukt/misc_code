@@ -1,1 +1,1 @@
-import code
+import mycode
