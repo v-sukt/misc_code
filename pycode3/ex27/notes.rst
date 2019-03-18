@@ -61,7 +61,7 @@ not equal truth table
 equal-to comparison truth table
 --------------------------------
 
-.. figure:: not_equal.jpg
-   :width: 322px
-   :height: 151px
+.. figure:: comparison.jpg
+   :width: 194px
+   :height: 150px
 
