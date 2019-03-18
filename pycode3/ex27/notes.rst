@@ -29,3 +29,39 @@ OR table
 | False or False | False   |
 +----------------+---------+
 
+AND table
+----------
+.. image:: and_truth.jpg
+   :width: 266px
+   :height: 151px
+
+
+
+not OR truth table
+-------------------
+
+.. figure:: or_not.jpg
+   :width: 316px
+   :height: 151px
+
+not AND truth table
+-------------------------
+
+.. figure:: not_and.jpg
+   :width: 322px
+   :height: 151px
+
+not equal truth table
+-------------------------
+
+.. figure:: not-equal.jpg
+   :width: 322px
+   :height: 151px
+
+equal-to comparison truth table
+--------------------------------
+
+.. figure:: not_equal.jpg
+   :width: 322px
+   :height: 151px
+
