@@ -36,7 +36,7 @@ for a class like:
 
     class MyStuff(object):
         def __init__(self):
-            some_var = 'someval'
+            self.some_var = 'someval'
 
         def method1(self, value):
             print("This will replace old value "
