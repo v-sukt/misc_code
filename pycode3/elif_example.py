@@ -1,7 +1,8 @@
 day = "Tuesday"
+
 if day == "Monday":
-     print("Sunny")
+    print("Sunny")
 elif day == "Tuesday":
-     print("Cloudy")
+    print("Cloudy")
 else:
-     print("Rainy!")
+    print("Rainy!")

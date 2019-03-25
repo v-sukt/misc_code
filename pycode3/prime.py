@@ -1,14 +1,17 @@
-primeNos=[1]
-for i in range(2,100000):
-#	print(i)
+primeNos = [1]
+
+for i in range(2, 100000):
+	# print(i)
 	count=2
-#	print("count init")
-	while i%count!=0 and count<i:
-		count=count+1
-#		print("count incr.")
-#		print("coint",count)
-	if i==(count):
-		primeNos.append(i)	
+	# print("count init")
+	while i % count != 0 and count < i:
+		count = count+1
+		# print("count incr.")
+		# print("coint",count)
+
+	if i == count:
+		primeNos.append(i)
+
 print(f"prime nos: {primeNos}")
 """
 real    1m26.425s
