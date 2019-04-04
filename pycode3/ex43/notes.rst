@@ -12,3 +12,6 @@ OOAD
     - the methods and working
 - for more go through the ex43 of the book
 
+In the exercise a game is provided which is:
+    a small version of something called a “finite state machine.”
+    Read about them. They might not make sense, but try anyway.
